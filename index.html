@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#17131f">
+<meta name="description" content="現実を攻略する生活RPG LIFE HUNTER">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<title>LIFE HUNTER</title>
+<style>
+:root{color-scheme:dark;--bg:#111018;--panel:#1d1a26;--panel2:#262231;--text:#f4f0e8;--muted:#aaa4b5;--orange:#ff8a25;--gold:#f3bd55;--blue:#70baff;--purple:#c4a0ff;--green:#8bd5a4;--line:#373142}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#302039 0,#111018 55%);color:var(--text);font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;min-height:100vh;padding-bottom:32px}
+header{padding:24px 18px 14px;max-width:760px;margin:auto}.eyebrow{font-size:11px;letter-spacing:.18em;color:var(--orange);font-weight:800}.headrow{display:flex;align-items:center;gap:13px;margin-top:8px}.emblem{width:54px;height:54px;border:1px solid #8e552e;background:linear-gradient(135deg,#3d2636,#1b1824);border-radius:16px;display:grid;place-items:center;font-size:27px}.headrow h1{font-size:23px;letter-spacing:.05em;margin:0}.sub{color:var(--muted);font-size:12px;margin-top:3px}.wrap{max-width:760px;margin:auto;padding:0 14px}.card{background:linear-gradient(145deg,rgba(34,30,44,.97),rgba(24,21,31,.97));border:1px solid var(--line);border-radius:19px;padding:17px;margin-bottom:13px;box-shadow:0 8px 30px #0002}.row{display:flex;align-items:center;justify-content:space-between;gap:12px}.rank{font-size:12px;color:#17131f;background:var(--gold);padding:5px 9px;border-radius:999px;font-weight:900}.muted{color:var(--muted)}.small{font-size:12px}.level{font-size:31px;font-weight:850;line-height:1.1}.xp{font-size:13px;color:var(--gold);font-weight:700}.bar{height:9px;background:#3a3444;border-radius:99px;overflow:hidden;margin:12px 0 7px}.bar>div{height:100%;background:linear-gradient(90deg,var(--orange),var(--gold));width:0%;transition:width .25s}.section-title{display:flex;align-items:center;justify-content:space-between;margin:20px 3px 10px}.section-title h2{font-size:16px;margin:0}.section-title span{font-size:11px;color:var(--muted)}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:15px}.stat{background:#ffffff08;border:1px solid #ffffff0d;border-radius:13px;padding:11px}.stat .ico{font-size:18px}.stat .name{font-size:11px;color:var(--muted);margin-top:5px}.stat strong{display:block;font-size:19px;margin-top:2px}.quest{display:flex;gap:11px;align-items:flex-start;padding:13px 0;border-bottom:1px solid #ffffff0e}.quest:last-child{border-bottom:0;padding-bottom:0}.check{appearance:none;flex:none;width:24px;height:24px;border:1.5px solid #6b6278;border-radius:8px;margin:2px 0 0;display:grid;place-items:center;background:#17141f}.check:checked{background:var(--orange);border-color:var(--orange)}.check:checked:after{content:"✓";font-weight:900;color:#17131f}.qmain{flex:1;min-width:0}.qtitle{font-weight:750;font-size:14px}.qdesc{font-size:12px;color:var(--muted);margin-top:4px;line-height:1.5}.tag{display:inline-block;font-size:10px;border-radius:5px;padding:3px 6px;background:#ffffff12;color:#d6ccdf;margin-left:5px}.reward{font-size:12px;color:var(--gold);font-weight:800;white-space:nowrap}.pill{border:1px solid var(--line);padding:7px 10px;border-radius:999px;color:var(--muted);font-size:11px}.btn{border:0;border-radius:12px;background:var(--orange);color:#24160c;font-weight:850;padding:12px 14px;font-size:13px;cursor:pointer}.btn.secondary{background:#ffffff0c;color:var(--text);border:1px solid var(--line)}.btn:active{transform:scale(.98)}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}.notice{background:#332619;border:1px solid #704520;color:#f4c88b;border-radius:12px;padding:11px 12px;font-size:12px;line-height:1.5;margin-bottom:13px}.logitem{padding:9px 0;border-bottom:1px solid #ffffff10;font-size:12px}.logitem:last-child{border-bottom:0}.empty{color:var(--muted);font-size:12px;padding:10px 0}.foot{text-align:center;color:#777180;font-size:10px;padding:15px}.field{background:#17141f;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:10px;width:100%;font:inherit}.label{font-size:12px;color:var(--muted);display:block;margin:10px 0 6px}.install{display:none}.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);background:#f5f0e8;color:#211923;border-radius:12px;padding:11px 15px;font-size:13px;font-weight:750;box-shadow:0 8px 30px #0007;z-index:10;max-width:90%;text-align:center}
+@media(min-width:620px){header{padding-top:32px}.wrap{padding:0 18px}.card{padding:21px}.headrow h1{font-size:27px}}
+</style>
+</head>
+<body>
+<header><div class="eyebrow">YOUR REAL LIFE, YOUR QUEST</div><div class="headrow"><div class="emblem">⚔</div><div><h1>LIFE HUNTER</h1><div class="sub">現実を攻略する成長システム</div></div></div></header>
+<main class="wrap">
+<div id="installNotice" class="notice install">ホーム画面に追加できます。ブラウザのメニューから「アプリをインストール」または「ホーム画面に追加」を選んでください。</div>
+<div class="card">
+ <div class="row"><div><div class="muted small">HUNTER STATUS</div><div class="level" id="level">Lv.1 <span class="muted" style="font-size:15px">新米ハンター</span></div></div><div class="rank" id="rank">F RANK</div></div>
+ <div class="bar"><div id="xpbar"></div></div>
+ <div class="row"><span class="muted small" id="xptext">累計 0 XP</span><span class="xp" id="nextxp">次のLvまで 100 XP</span></div>
+ <div class="stats">
+  <div class="stat"><div class="ico">🧠</div><div class="name">知力</div><strong id="statKnowledge">Lv.1</strong><div class="muted small" id="xpKnowledge">0 XP</div></div>
+  <div class="stat"><div class="ico">⚡</div><div class="name">精神力</div><strong id="statMind">Lv.1</strong><div class="muted small" id="xpMind">0 XP</div></div>
+  <div class="stat"><div class="ico">🤝</div><div class="name">対人力</div><strong id="statSocial">Lv.1</strong><div class="muted small" id="xpSocial">0 XP</div></div>
+ </div>
+ <div class="row" style="margin-top:15px"><span class="muted small">🔥 ストリーク <b id="streak" style="color:var(--text)">0日</b></span><span class="muted small">今週 <b id="weekProgress" style="color:var(--text)">0/4</b> クエスト</span></div>
+</div>
+<div class="section-title"><h2>⚔ 本日のクエスト</h2><span id="today"></span></div>
+<div class="card" id="dailyCard"></div>
+<div class="section-title"><h2>🏆 ウィークリークエスト</h2><span id="weekLabel"></span></div>
+<div class="card" id="weeklyCard"></div>
+<div class="section-title"><h2>📜 討伐記録</h2><span>この端末に保存</span></div>
+<div class="card"><div id="logs" class="empty">まだ記録はありません。</div><div class="actions"><button class="btn secondary" id="exportBtn">記録をバックアップ</button><button class="btn secondary" id="importBtn">バックアップを復元</button><button class="btn secondary" id="resetBtn">全データ初期化</button><input id="fileInput" type="file" accept="application/json" hidden></div></div>
+<div class="foot">LIFE HUNTER · ローカル保存 · サーバーへ送信しません<br>ブラウザのデータ削除・アプリ削除の前にバックアップしてください。</div>
+</main>
+<script>
+const DAILY=[
+ {id:"wake",title:"朝の覚醒",desc:"9:30までに起きて、ベッドから出る",xp:5,cat:"mind",rank:"E"},
+ {id:"sns",title:"スマホ制限の結界",desc:"起床後15分間、SNSを開かない",xp:5,cat:"mind",rank:"E"},
+ {id:"social",title:"対人経験値の獲得",desc:"自分から挨拶・質問・連絡のどれかを1回する",xp:5,cat:"social",rank:"E"},
+ {id:"study",title:"知力の基礎訓練",desc:"大学・英語・SPIのどれかを10分行う",xp:5,cat:"knowledge",rank:"E"}
+];
+const WEEKLY=[
+ {id:"w_social",title:"コミュニケーション強化",desc:"自分から働きかける行動を週3回",xp:30,goal:3,metric:"social"},
+ {id:"w_sns",title:"SNS制限の習慣化",desc:"起床後15分のSNS制限を週5日",xp:25,goal:5,metric:"sns"},
+ {id:"w_study",title:"学習習慣の解放",desc:"10分以上の勉強を週3日",xp:20,goal:3,metric:"study"},
+ {id:"w_review",title:"週間レビュー",desc:"週間の振り返りを1回行う",xp:15,goal:1,metric:"review"}
+];
+const KEY="lifeHunterSave_v1";
+function fresh(){return {totalXP:0,catXP:{knowledge:0,mind:0,social:0},completed:{},weeklyClaims:{},logs:[],streak:0,lastActive:null,created:new Date().toISOString()}}
+let state=load();
+function load(){try{return {...fresh(),...JSON.parse(localStorage.getItem(KEY)||"{}")}}catch(e){return fresh()}}
+function save(){localStorage.setItem(KEY,JSON.stringify(state))}
+function dateKey(d=new Date()){return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`}
+function startOfWeek(d=new Date()){let x=new Date(d);x.setHours(0,0,0,0);x.setDate(x.getDate()-((x.getDay()+6)%7));return dateKey(x)}
+function weekKey(){return startOfWeek()}
+function levelInfo(xp){let level=1,used=0,need=100;while(xp-used>=need){used+=need;level++;need=100+20*(level-1)}return {level,used,need,into:xp-used}}
+function rankInfo(lv){if(lv>=75)return "S";if(lv>=50)return "A";if(lv>=35)return "B";if(lv>=20)return "C";if(lv>=10)return "D";if(lv>=5)return "E";return "F"}
+function levelForCat(xp){return 1+Math.floor(xp/100)}
+function getDone(day=dateKey()){return state.completed[day]||[]}
+function isDone(id,day=dateKey()){return getDone(day).includes(id)}
+function weeklyCount(metric){let start=weekKey(),count=0;for(const [day,ids] of Object.entries(state.completed)){if(day>=start&&day<=dateKey()&&ids.includes(metric))count++}return count}
+function weekDone(id){return !!(state.weeklyClaims[weekKey()]||[]).includes(id)}
+function addXP(amount,cat,desc){state.totalXP+=amount;state.catXP[cat]=(state.catXP[cat]||0)+amount;state.logs.unshift({date:dateKey(),time:new Date().toLocaleTimeString("ja-JP",{hour:"2-digit",minute:"2-digit"}),desc,xp:amount});updateStreak();save()}
+function updateStreak(){let today=dateKey(),y=new Date();y.setDate(y.getDate()-1);let yesterday=dateKey(y);if(state.lastActive!==today){state.streak=state.lastActive===yesterday?(state.streak||0)+1:1;state.lastActive=today}}
+function completeDaily(id){let day=dateKey(),arr=state.completed[day]||[];if(arr.includes(id))return;const q=DAILY.find(x=>x.id===id);if(!q)return;arr.push(id);state.completed[day]=arr;addXP(q.xp,q.cat,q.title);render();toast(`${q.title} 達成！ +${q.xp} XP`)}
+function completeWeekly(id){let arr=state.weeklyClaims[weekKey()]||[];if(arr.includes(id))return;const q=WEEKLY.find(x=>x.id===id);if(!q)return;let count=q.metric==="review"?(arr.includes("review_done")?1:0):weeklyCount(q.metric);if(count<q.goal){toast(`進捗が足りません（${count}/${q.goal}）。日々のクエスト記録を進めよう。`);return}arr.push(id);state.weeklyClaims[weekKey()]=arr;state.totalXP+=q.xp;state.logs.unshift({date:dateKey(),time:new Date().toLocaleTimeString("ja-JP",{hour:"2-digit",minute:"2-digit"}),desc:q.title,xp:q.xp});save();render();toast(`${q.title} 達成！ +${q.xp} XP`)}
+function render(){let info=levelInfo(state.totalXP);document.getElementById("level").innerHTML=`Lv.${info.level} <span class="muted" style="font-size:15px">${info.level===1?"新米ハンター":"成長中"}</span>`;document.getElementById("rank").textContent=rankInfo(info.level)+" RANK";document.getElementById("xpbar").style.width=(info.into/info.need*100)+"%";document.getElementById("xptext").textContent=`累計 ${state.totalXP} XP`;document.getElementById("nextxp").textContent=`次のLvまで ${info.need-info.into} XP`;document.getElementById("streak").textContent=(state.streak||0)+"日";for(let [cat,id] of [["knowledge","statKnowledge"],["mind","statMind"],["social","statSocial"]]){document.getElementById(id).textContent="Lv."+levelForCat(state.catXP[cat]||0);document.getElementById("xp"+cat.charAt(0).toUpperCase()+cat.slice(1)).textContent=(state.catXP[cat]||0)+" XP"}
+document.getElementById("today").textContent=new Date().toLocaleDateString("ja-JP",{month:"numeric",day:"numeric",weekday:"short"});document.getElementById("weekLabel").textContent=weekKey().slice(5)+"〜";
+let dhtml="";for(const q of DAILY){let done=isDone(q.id);dhtml+=`<div class="quest"><input class="check" type="checkbox" ${done?"checked":""} ${done?"disabled":""} aria-label="${q.title}" onchange="completeDaily('${q.id}')"><div class="qmain"><div class="qtitle">${q.title}<span class="tag">${q.rank}級</span></div><div class="qdesc">${q.desc}</div></div><div class="reward">+${q.xp} XP</div></div>`}document.getElementById("dailyCard").innerHTML=dhtml;
+let wh="";for(const q of WEEKLY){let count=q.metric==="review"?(state.weeklyClaims[weekKey()]||[]).includes("review_done")?1:0:weeklyCount(q.metric);let claimed=weekDone(q.id);wh+=`<div class="quest"><div class="qmain"><div class="qtitle">${q.title}${claimed?'<span class="tag">討伐済み</span>':''}</div><div class="qdesc">${q.desc} · 進捗 ${count}/${q.goal}</div><div class="bar" style="margin:8px 0 0;height:5px"><div style="width:${Math.min(100,count/q.goal*100)}%;background:var(--blue)"></div></div></div><div style="text-align:right"><div class="reward">+${q.xp} XP</div><button class="btn secondary" style="padding:7px 9px;margin-top:7px;font-size:11px" ${claimed?"disabled":""} onclick="weeklyAction('${q.id}')">${claimed?"達成済み":"達成確認"}</button></div></div>`}document.getElementById("weeklyCard").innerHTML=wh;
+let totalWeekly=0;for(const q of WEEKLY)if(weekDone(q.id))totalWeekly++;document.getElementById("weekProgress").textContent=totalWeekly+"/4";
+document.getElementById("logs").innerHTML=state.logs.length?state.logs.slice(0,12).map(l=>`<div class="logitem"><div class="row"><span>${l.date} ${l.time||""} · ${escapeHtml(l.desc)}</span><b style="color:var(--gold)">+${l.xp} XP</b></div></div>`).join(""):'<div class="empty">まだ記録はありません。</div>';
+}
+function weeklyAction(id){const q=WEEKLY.find(x=>x.id===id);if(q.metric==="review"){let note=prompt("今週できたこと・改善したいことを一言で入力してください");if(!note||!note.trim())return;let arr=state.weeklyClaims[weekKey()]||[];if(!arr.includes("review_done"))arr.push("review_done");state.weeklyClaims[weekKey()]=arr;state.logs.unshift({date:dateKey(),time:new Date().toLocaleTimeString("ja-JP",{hour:"2-digit",minute:"2-digit"}),desc:"週間レビュー："+note.trim(),xp:0});save();completeWeekly(id);return}completeWeekly(id)}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function toast(msg){let old=document.querySelector(".toast");if(old)old.remove();let el=document.createElement("div");el.className="toast";el.textContent=msg;document.body.appendChild(el);setTimeout(()=>el.remove(),2500)}
+document.getElementById("exportBtn").onclick=()=>{let blob=new Blob([JSON.stringify(state,null,2)],{type:"application/json"});let a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="life-hunter-backup-"+dateKey()+".json";a.click();URL.revokeObjectURL(a.href);toast("バックアップを保存しました")};
+document.getElementById("importBtn").onclick=()=>document.getElementById("fileInput").click();
+document.getElementById("fileInput").onchange=e=>{let f=e.target.files[0];if(!f)return;let r=new FileReader();r.onload=()=>{try{let x=JSON.parse(r.result);if(typeof x.totalXP!=="number"||!x.completed)throw Error();if(confirm("現在の記録をバックアップ内容で置き換えますか？")){state={...fresh(),...x};save();render();toast("記録を復元しました")}}catch(err){alert("バックアップファイルを読み込めませんでした")}};r.readAsText(f);e.target.value=""};
+document.getElementById("resetBtn").onclick=()=>{if(confirm("全てのXP・クエスト・記録を削除します。この操作は元に戻せません。事前にバックアップしましたか？")&&confirm("本当に初期化しますか？")){state=fresh();save();render();toast("初期化しました")}};
+if("serviceWorker" in navigator && location.protocol.startsWith("http"))navigator.serviceWorker.register("./sw.js").catch(()=>{});
+if(window.matchMedia("(display-mode: standalone)").matches===false)document.getElementById("installNotice").style.display="block";
+render();
+</script>
+</body>
+</html>

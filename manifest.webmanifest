@@ -1,0 +1,19 @@
+{
+  "name": "LIFE HUNTER - 生活RPG",
+  "short_name": "LIFE HUNTER",
+  "description": "現実を攻略する生活RPG",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#111018",
+  "theme_color": "#17131f",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
